@@ -21,10 +21,10 @@ The data used for the modelling is S&P index of BSE SENSEX from 1st January 2015
 
 ## 2.1 Modelling Data
 I  try to model this using different models like ARIMA(1,1,1) ,SARIMA(0,1,1)*(0,0,1) and SARIMA(0,1,1)*(0,0,1)[52].\
->**Model 	                    AIC      	BIC **\
->ARIMA(1,1,1)         	5036.637 	5047.856 \
->SARIMA(0,1,1)*(0,0,1) 	5033.007 	5044.226 \
->SARIMA(0,1,1)*(0,0,1)[52] 	227.2842 	234.4056 \
+**Model____________________AIC____________BIC **\
+ARIMA(1,1,1)_______________5036.637_______5047.856 \
+SARIMA(0,1,1)*(0,0,1)______5033.007_______5044.226 \
+SARIMA(0,1,1)*(0,0,1)[52]__227.2842_______234.4056 
 
 The data on AIC and BIC of each of the models leads us to the conclusion that SARIMA(0,1,1)(0,0,1)[52] is the appropriate fit for the model with seasonal factor and difference factor as 52. We further check the residual of the fitted model are stationary in nature. \
 \
