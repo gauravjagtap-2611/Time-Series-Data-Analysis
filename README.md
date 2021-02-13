@@ -59,3 +59,9 @@ AIC and BIC both are minimum for SARIMA(1,1,1)*(0,0,2)[12]. Therefore SARIMA(1,1
 The seasonal plot signifies that there exists a seasonal component that affects the model. The plot for the year 2020 shows a strong decrease in exports from February to June. This is obvious as restrictions were imposed by most of the countries due to the pandemic COVID 19. 
 
 * * * 
+
+## 4.Power Consumption: 
+
+The dataset consists of electricity consumption data (Recorded at every hour for 10 days from 28/06/2017 to 11/07/2017) from a high-rise residential building inside the IIT Bombay campus.
+
+Here also we try to model our data using different existing Time Series models and came to the conclusion that SARIMA(0,1,1)(0,0,1) is best fit.
