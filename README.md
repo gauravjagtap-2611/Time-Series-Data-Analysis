@@ -11,7 +11,10 @@
 
 The data consists of closing prices of stock per month starting from 1st January 2000 to 18th December 2020. The data was collected from the website of yahoo finance.
 Here we try to model the stock price data using different models, where ARIMA(0,1,0) fits the best.
+
+
 ![image](https://user-images.githubusercontent.com/78009164/107781211-a6121d80-6d6d-11eb-975c-a7661d6e7bd3.png)
+
 ## 1.1 Conclusion & Interpretation:
 From the above plot we can say that the residuals are stationary in nature. Ljung-Box test also signifies that the residuals are stationary in nature. Thus the best fit for the mo del ARIMA(0,1,0) which is a random walk.  
 
@@ -21,7 +24,7 @@ The data used for the modelling is S&P index of BSE SENSEX from 1st January 2015
 
 ## 2.1 Modelling Data
 I  try to model this using different models like ARIMA(1,1,1) ,SARIMA(0,1,1)*(0,0,1) and SARIMA(0,1,1)*(0,0,1)[52].\
-**Model____________________AIC____________BIC **\
+Model_________________________AIC____________BIC\
 ARIMA(1,1,1)_______________5036.637_______5047.856 \
 SARIMA(0,1,1)*(0,0,1)______5033.007_______5044.226 \
 SARIMA(0,1,1)*(0,0,1)[52]__227.2842_______234.4056 
@@ -29,6 +32,23 @@ SARIMA(0,1,1)*(0,0,1)[52]__227.2842_______234.4056
 The data on AIC and BIC of each of the models leads us to the conclusion that SARIMA(0,1,1)(0,0,1)[52] is the appropriate fit for the model with seasonal factor and difference factor as 52. We further check the residual of the fitted model are stationary in nature. \
 \
 I also tried to forecast **volaility Forecasting using GARCH Model.**\
+
 ![image](https://user-images.githubusercontent.com/78009164/107784944-030fd280-6d72-11eb-8584-b2e4e33a5474.png)
 
 The black line is the line of squared residuals and the red line is the conditional varian ces. We do observe a typical GARCH pattern where the conditional variances increase s as the squared residual increases. This is due to the volatility. This can be observed b etween 250 and 300
+
+## 3. Indian Foreign Trade (Export): 
+
+ The data is from April 1990 to July 2020. The variable taken into consideration is export. The data is monthly with April to March as one cycle. \
+
+## 3.1 Exploring Time Series:
+
+Here we can see that there exists trend and seasonality in the data of Exports. 
+ 
+
+## 3.2 Modelling Time Series
+AIC and BIC both are minimum for SARIMA(1,1,1)*(0,0,2)[12]. Therefore SARIMA(1,1,1)*(0,0,2)[12] is the best fit for the data. Since there exists seasonal component and it majorly affects the series hence it is the best fit. 
+
+
+
+The seasonal plot signifies that there exists a seasonal component that affects the model. The plot for the year 2020 shows a strong decrease in exports from February to June. This is obvious as restrictions were imposed by most of the countries due to the pandemic COVID 19. 
