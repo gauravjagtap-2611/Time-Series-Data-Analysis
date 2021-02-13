@@ -74,6 +74,8 @@ Here also we try to model our data using different existing Time Series models a
 
 The dataset consists of weekly foreign exchange reserves in rupees and US dollars (from 06 April 2001 to 27 November 2020) comprising of 1029 observations
 
+![image](https://user-images.githubusercontent.com/78009164/107842620-be744d80-6dea-11eb-8232-b7b95916fce3.png)
+
 We find that ACF & PACF of the data are not very conclusive, therefore we try to model this data using different models.
 
 The above plot shows the forecasting for the data based on SARIMA model. Prices tend to increase because of the increasing trend. Hence gold prices tend to increase over the years. 
