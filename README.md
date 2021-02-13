@@ -78,4 +78,5 @@ The dataset consists of weekly foreign exchange reserves in rupees and US dollar
 
 We find that ACF & PACF of the data are not very conclusive, therefore we try to model this data using different models.
 
-The above plot shows the forecasting for the data based on SARIMA model. Prices tend to increase because of the increasing trend. Hence gold prices tend to increase over the years. 
+
+We fit the model and carry out forecasting for the data based on SARIMA model. Prices tend to increase because of the increasing trend. Hence gold prices tend to increase over the years. 
