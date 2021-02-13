@@ -64,4 +64,16 @@ The seasonal plot signifies that there exists a seasonal component that affects 
 
 The dataset consists of electricity consumption data (Recorded at every hour for 10 days from 28/06/2017 to 11/07/2017) from a high-rise residential building inside the IIT Bombay campus.
 
+![image](https://user-images.githubusercontent.com/78009164/107842496-b831a180-6de9-11eb-9194-faa555d1173e.png)
+
 Here also we try to model our data using different existing Time Series models and came to the conclusion that SARIMA(0,1,1)(0,0,1) is best fit.
+
+* * *
+
+## 5. Foreign Exchange Reserves weekly for Gold: 
+
+The dataset consists of weekly foreign exchange reserves in rupees and US dollars (from 06 April 2001 to 27 November 2020) comprising of 1029 observations
+
+We find that ACF & PACF of the data are not very conclusive, therefore we try to model this data using different models.
+
+The above plot shows the forecasting for the data based on SARIMA model. Prices tend to increase because of the increasing trend. Hence gold prices tend to increase over the years. 
