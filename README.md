@@ -45,10 +45,12 @@ The black line is the line of squared residuals and the red line is the conditio
 
 Here we can see that there exists trend and seasonality in the data of Exports. 
  
+![image](https://user-images.githubusercontent.com/78009164/107842331-6fc5b400-6de8-11eb-9cad-5c4ab6c4b237.png)
 
 ## 3.2 Modelling Time Series
 AIC and BIC both are minimum for SARIMA(1,1,1)*(0,0,2)[12]. Therefore SARIMA(1,1,1)*(0,0,2)[12] is the best fit for the data. Since there exists seasonal component and it majorly affects the series hence it is the best fit. 
 
 
+![image](https://user-images.githubusercontent.com/78009164/107842334-7bb17600-6de8-11eb-98a9-34b059111859.png)
 
 The seasonal plot signifies that there exists a seasonal component that affects the model. The plot for the year 2020 shows a strong decrease in exports from February to June. This is obvious as restrictions were imposed by most of the countries due to the pandemic COVID 19. 
