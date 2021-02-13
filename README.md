@@ -1,12 +1,12 @@
 # Time-Series-Data-Analysis
-
+* * *
 ## Analysed:
 •	Reliance Communication\
 •	Indian Foreign Trade (Export)\
 •	S&P BSE Sensex\
 •	Power Consumption\
 •	Foreign Exchange Reserves weekly for Gold\
-
+* * *
 ## 1.Reliance Communication:
 
 The data consists of closing prices of stock per month starting from 1st January 2000 to 18th December 2020. The data was collected from the website of yahoo finance.
@@ -18,6 +18,7 @@ Here we try to model the stock price data using different models, where ARIMA(0,
 ## 1.1 Conclusion & Interpretation:
 From the above plot we can say that the residuals are stationary in nature. Ljung-Box test also signifies that the residuals are stationary in nature. Thus the best fit for the mo del ARIMA(0,1,0) which is a random walk.  
 
+* * *
        
 ## 2. S&P BSE Sensex
 The data used for the modelling is S&P index of BSE SENSEX from 1st January 2015 to 17th December 2020. This is weekly data consisting of 312 data points. Variables in the data are such as opening and closing sensex for the week, high and low stock sensex for the week and volume. The data was collected from yahoo finance website.\
@@ -37,6 +38,8 @@ I also tried to forecast **volaility Forecasting using GARCH Model.**\
 
 The black line is the line of squared residuals and the red line is the conditional varian ces. We do observe a typical GARCH pattern where the conditional variances increase s as the squared residual increases. This is due to the volatility. This can be observed b etween 250 and 300
 
+* * *
+
 ## 3. Indian Foreign Trade (Export): 
 
  The data is from April 1990 to July 2020. The variable taken into consideration is export. The data is monthly with April to March as one cycle. \
@@ -54,3 +57,5 @@ AIC and BIC both are minimum for SARIMA(1,1,1)*(0,0,2)[12]. Therefore SARIMA(1,1
 ![image](https://user-images.githubusercontent.com/78009164/107842334-7bb17600-6de8-11eb-98a9-34b059111859.png)
 
 The seasonal plot signifies that there exists a seasonal component that affects the model. The plot for the year 2020 shows a strong decrease in exports from February to June. This is obvious as restrictions were imposed by most of the countries due to the pandemic COVID 19. 
+
+* * * 
